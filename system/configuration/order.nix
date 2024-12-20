@@ -1,7 +1,6 @@
 { inputs, config, pkgs, ... }:
 {
   # Virtal #
-  virtualisation.libvirtd.enable = true;
   virtualisation.docker.enable = true;
   virtualisation.docker.enableNvidia = true;
   # OpenSSH #

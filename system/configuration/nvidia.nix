@@ -6,7 +6,8 @@
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = true;
-    package = config.boot.kernelPackages.nvidiaPackages.dc_535;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    open = true;
     nvidiaSettings = false;
   };
 }
