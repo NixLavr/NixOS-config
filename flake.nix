@@ -24,7 +24,8 @@
 
     in
 
-    {
+    { 
+      packages.${system}.windsurf = pkgs.callPackage ./pkgs/windsurf/default.nix { };
       nixosConfigurations = {
         NixOS = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
