@@ -6,7 +6,7 @@
   # paths it should manage.
   home.username = "lavr";
   home.homeDirectory = "/home/lavr";
-  home.stateVersion = "24.05";
+  home.stateVersion = "24.11";
 
   # GTK #
   gtk = {
@@ -19,7 +19,7 @@
     font.size = 9;
     theme = {
       package = pkgs.tokyonight-gtk-theme;
-      name = "Tokyonight-Storm-BL-LB";
+      name = "Tokyonight-Dark";
       };
  };
  # Let Home Manager install and manage itself.``

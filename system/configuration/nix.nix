@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }:
+{ inputs, config, pkgs, lib, ... }:
 {
 # Nix Conf #
   nixpkgs.config.nvidia.acceptLicense = true;
@@ -8,5 +8,6 @@
     man.enable = false;
     dev.enable = false;
   };
+  nix.settings.substituters = lib.mkForce ["https://nixos-cache-proxy.cofob.dev"];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }

@@ -2,7 +2,7 @@
   description = "Nix config by Lavr";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     
     home-manager = {
       url = "github:/nix-community/home-manager";

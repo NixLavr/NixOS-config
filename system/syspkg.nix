@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 {
+   nixpkgs.config.permittedInsecurePackages = [
+                "dotnet-runtime-7.0.20"
+              ];
   # System Apps #
   environment.systemPackages = with pkgs; [
     # CUI #
@@ -27,10 +30,6 @@
     
     # IDE #
     vscode
-    sqlitebrowser
-    # Vitral #
-    qemu
-    virt-manager
     
     # WM #
     rofi-wayland
@@ -43,7 +42,6 @@
     waypaper
     swaybg
     waybar
-    qt5ct
     kitty
     
     # Programs #
@@ -53,12 +51,9 @@
     heroic
     goverlay
     libreoffice
-    kdenlive
     gimp
     gwenview
     ark
-    keepassxc
-    upscayl
     qbittorrent
     thunderbird
     prismlauncher
@@ -69,12 +64,12 @@
     jdk8
     jdk17
     ffmpeg
-    gnome3.adwaita-icon-theme
+    gnome.adwaita-icon-theme
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5.qtgraphicaleffects
     libsForQt5.qt5.qtquickcontrols2
-    # Cell Packags #
-    # (callPackage ../pkgs/sddm-theme/default.nix { }) 
+    # Cell Packages 
+    (callPackage ../pkgs/vintage-story/default.nix { }) 
   ];
    # Thunar #
    programs.thunar.enable = true;

@@ -11,8 +11,7 @@
   programs.hyprland.enable = true;
   programs.dconf.enable = true;
   hardware.opengl.driSupport32Bit = true;
-  hardware.opengl.driSupport = true;
-  
+    
   # xdg #
   xdg.portal.enable = true;
   
