@@ -1,5 +1,9 @@
-{ inputs, config, pkgs, ... }:
 {
+  inputs,
+  config,
+  pkgs,
+  ...
+}: {
   # Time and Locale #
   time.timeZone = "Asia/Almaty";
   i18n.defaultLocale = "ru_RU.UTF-8";

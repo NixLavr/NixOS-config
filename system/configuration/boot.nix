@@ -1,15 +1,18 @@
-{ inputs, config, pkgs, ... }:
-let
-grub-theme = import ../../pkgs/grub-theme/default.nix  { inherit pkgs; };
-in
 {
-# Boot loader # 
-  boot.kernelParams = [ "quiet" "rhgb" ];
-  boot.supportedFilesystems = [ "ntfs" ];
+  inputs,
+  config,
+  pkgs,
+  ...
+}: let
+  grub-theme = import ../../pkgs/grub-theme/default.nix {inherit pkgs;};
+in {
+  # Boot loader #
+  boot.kernelParams = ["quiet" "rhgb"];
+  boot.supportedFilesystems = ["ntfs"];
   boot.loader = {
     efi = {
       canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot/efi"; 
+      efiSysMountPoint = "/boot/efi";
     };
 
     grub = {

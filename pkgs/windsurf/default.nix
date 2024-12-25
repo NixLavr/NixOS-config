@@ -1,5 +1,13 @@
-{callPackage, fetchurl, nixosTests, lib, pkgs,  commandLineArgs ? "", useVSCodeRipgrep ? "", ...}:
-
+{
+  callPackage,
+  fetchurl,
+  nixosTests,
+  lib,
+  pkgs,
+  commandLineArgs ? "",
+  useVSCodeRipgrep ? "",
+  ...
+}:
 # https://windsurf-stable.codeium.com/api/update/linux-x64/stable/latest
 callPackage "${pkgs.path}/pkgs/applications/editors/vscode/generic.nix" rec {
   inherit commandLineArgs;

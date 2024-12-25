@@ -1,5 +1,9 @@
-{ inputs, config, pkgs, ... }:
 {
+  inputs,
+  config,
+  pkgs,
+  ...
+}: {
   # Virtal #
   virtualisation.docker.enable = true;
   virtualisation.docker.enableNvidia = true;

@@ -1,7 +1,9 @@
-
-{ inputs, config, pkgs, ... }:
-
 {
+  inputs,
+  config,
+  pkgs,
+  ...
+}: {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "lavr";
@@ -20,9 +22,9 @@
     theme = {
       package = pkgs.tokyonight-gtk-theme;
       name = "Tokyonight-Dark";
-      };
- };
- # Let Home Manager install and manage itself.``
+    };
+  };
+  # Let Home Manager install and manage itself.``
   programs.home-manager.enable = true;
   imports = [
     inputs.ags.homeManagerModules.default
@@ -32,5 +34,6 @@
     ./home/wm/dunst
     ./home/wm/wlogout
     ./home/wm/rofi
+    ./home/programs/neovim
   ];
 }

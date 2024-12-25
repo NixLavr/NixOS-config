@@ -1,6 +1,10 @@
-{ inputs, config, pkgs, ... }:
 {
-# Sound #
+  inputs,
+  config,
+  pkgs,
+  ...
+}: {
+  # Sound #
   # rtkit is optional but recommended
   security.rtkit.enable = true;
   services.pipewire = {

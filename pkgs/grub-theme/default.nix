@@ -1,5 +1,4 @@
 {pkgs ? import <nixpkgs> {}}:
-
 pkgs.stdenv.mkDerivation rec {
   pname = "grub-theme";
   version = "0.0.1";
@@ -11,7 +10,6 @@ pkgs.stdenv.mkDerivation rec {
     hash = "sha256-bDw+W69jeSiE1VBdQqqaeZf7OqCN7q5XYJ5+94PILXE=";
   };
   installPhase = ''
-  cp -r src/catppuccin-macchiato-grub-theme $out
+    cp -r src/catppuccin-macchiato-grub-theme $out
   '';
 }
-
