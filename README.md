@@ -1,6 +1,5 @@
 <div align="center"><img src="assets/nixos-logo.png" width="300px"></div>
-<h1 align="center">NixLavr NixOS Configuration</h1>
-
+<h1 align="center">MaxMur ❄️ NixOS Public Configuration</h1>
 <div align="center">
 
 ![nixos](https://img.shields.io/badge/NixOS-unstable-blue.svg?style=flat&logo=nixos&logoColor=CAD3F5&colorA=24273A&colorB=8aadf4)
@@ -8,7 +7,6 @@
 ![license](https://img.shields.io/static/v1.svg?style=flat&label=License&message=Unlicense&colorA=24273A&colorB=91d7e3&logo=unlicense&logoColor=91d7e3&)
 
 </div>
-NixOS configuration; Dotfiles Hyprland
 
 ```bash
 git clone https://github.com/StasLavr/NixOS-Conf.git
