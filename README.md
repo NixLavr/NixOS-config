@@ -1,10 +1,10 @@
 <div align="center"><img src="assets/nixos-logo.png" width="300px"></div>
-<h1 align="center">MaxMur ❄️ NixOS Public Configuration</h1>
+<h1 align="center">NixOS ❄️ NixOS Public Configuration</h1>
 <div align="center">
 
-![nixos](https://img.shields.io/badge/NixOS-unstable-blue.svg?style=flat&logo=nixos&logoColor=CAD3F5&colorA=24273A&colorB=8aadf4)
+![nixos](https://img.shields.io/badge/NixOS-24.11-blue.svg?style=flat&logo=nixos&logoColor=CAD3F5&colorA=24273A&colorB=8aadf4)
 ![flake check](https://img.shields.io/static/v1?label=Nix%20Flake&message=Check&style=flat&logo=nixos&colorA=24273A&colorB=9173ff&logoColor=CAD3F5)
-![license](https://img.shields.io/static/v1.svg?style=flat&label=License&message=Unlicense&colorA=24273A&colorB=91d7e3&logo=unlicense&logoColor=91d7e3&)
+![license](https://img.shields.io/static/v1.svg?style=flat&label=License&message=GNU_GPL&colorA=24273A&colorB=91d7e3&logo=unlicense&logoColor=91d7e3&)
 
 </div>
 
