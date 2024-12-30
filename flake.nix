@@ -28,10 +28,25 @@
       pkgs = nixpkgs.legacyPackages.${system};
     };
     nixosConfigurations = {
-      NixOS = nixpkgs.lib.nixosSystem {
+      Hyprland = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs self system;};
         modules = [
-          ./system/configuration.nix
+          ./hosts/Hyprland/default.nix
+          ./hosts/hardware-configuration.nix
+        ];
+      };
+      Plasma = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs self system;};
+        modules = [
+          ./hosts/Plasma/default.nix
+          ./hosts/hardware-configuration.nix
+        ];
+      };
+      Gnome = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs self system;};
+        modules = [
+          ./hosts/Gnome/default.nix
+          ./hosts/hardware-configuration.nix
         ];
       };
     };

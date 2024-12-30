@@ -64,7 +64,7 @@
     libsForQt5.qt5.qtgraphicaleffects
     libsForQt5.qt5.qtquickcontrols2
     # Cell Packages
-    (callPackage ../pkgs/vintage-story/default.nix {})
+    #(callPackage ../pkgs/vintage-story/default.nix {})
   ];
   # Thunar #
   programs.thunar.enable = true;

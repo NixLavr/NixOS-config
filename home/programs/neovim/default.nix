@@ -4,7 +4,8 @@
   config,
   inputs,
   ...
-}: {
+}:
+{
   programs.neovim = {
     enable = true;
     extraPackages = with pkgs; [
@@ -16,8 +17,9 @@
       alejandra
     ];
   };
-   home.file = {
+  home.file = {
     ".config/nvim".source = ./config;
   };
   nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
 }
+w

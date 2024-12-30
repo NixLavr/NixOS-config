@@ -17,7 +17,7 @@ The `home.nix` file contains details about all the software I use, but here's a 
 
 | Type           | Program      |
 | :------------- | :----------: |
-| Editor         | Visual Studio Code |
+| Editor         | Visual Studio Code & NeoVim |
 | Launcher       | Rofi |
 | Shell          | Fish |
 | Status Bar     | Waybar |

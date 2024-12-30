@@ -1,6 +1,9 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   # System Apps #
-  nixpkgs.config.permittedInsecurePackages = ["dotnet-runtime-7.0.20" "yandex-browser-stable-24.7.1.1120-1"];
   environment.systemPackages = with pkgs; [
     # CUI #
     wget
@@ -24,20 +27,16 @@
     lutgen
     docker-compose
     # GUI Apps
+
     # IDE #
     vscode
+    sqlitebrowser
+    # Vitral #
+    qemu
+    virt-manager
+
     # WM #
-    rofi-wayland
     firefox
-    wlogout
-    nwg-drawer
-    grim
-    mpv
-    networkmanagerapplet
-    waypaper
-    swaybg
-    waybar
-    kitty
 
     # Programs #
     telegram-desktop
@@ -46,9 +45,12 @@
     heroic
     goverlay
     libreoffice
+    kdenlive
     gimp
     gwenview
     ark
+    keepassxc
+    upscayl
     qbittorrent
     thunderbird
     prismlauncher
@@ -63,14 +65,9 @@
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5.qtgraphicaleffects
     libsForQt5.qt5.qtquickcontrols2
-    # Cell Packages
-    (callPackage ../pkgs/vintage-story/default.nix {})
+    # Cell Packags #
+    # (callPackage ../pkgs/sddm-theme/default.nix { })
   ];
   # Thunar #
-  programs.thunar.enable = true;
-  services.tumbler.enable = true;
-  programs.thunar.plugins = with pkgs.xfce; [
-    thunar-archive-plugin
-    thunar-volman
-  ];
+  programs.firefox.enable = true;
 }
