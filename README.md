@@ -1,5 +1,5 @@
 <div align="center"><img src="assets/nixos-logo.png" width="300px"></div>
-<h1 align="center">NixOS ❄️ NixOS Public Configuration</h1>
+<h1 align="center">NixLavr ❄️ NixOS Public Configuration</h1>
 <div align="center">
 
 ![nixos](https://img.shields.io/badge/NixOS-24.11-blue.svg?style=flat&logo=nixos&logoColor=CAD3F5&colorA=24273A&colorB=8aadf4)
