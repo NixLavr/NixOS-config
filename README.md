@@ -9,7 +9,7 @@
 </div>
 
 ```bash
-git clone https://github.com/StasLavr/NixOS-Conf.git
+git clone https://gitlab.com/nixlavr/nixos-config.git
 mv nixos-config $HOME/nix # Config is supposed to be in the ~/nix directory
 cd $HOME/nix
 sudo nixos-rebuild switch --flake .#NixOS
