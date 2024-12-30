@@ -1,5 +1,13 @@
-![nixos-white](https://github.com/StasLavr/NixOS-Conf/assets/110830098/eb4d66a8-1e6c-4173-a09a-10b7ff26762c)
-# NixOS-Conf
+<div align="center"><img src="assets/nixos-logo.png" width="300px"></div>
+<h1 align="center">NixLavr NixOS Configuration</h1>
+
+<div align="center">
+
+![nixos](https://img.shields.io/badge/NixOS-unstable-blue.svg?style=flat&logo=nixos&logoColor=CAD3F5&colorA=24273A&colorB=8aadf4)
+![flake check](https://img.shields.io/static/v1?label=Nix%20Flake&message=Check&style=flat&logo=nixos&colorA=24273A&colorB=9173ff&logoColor=CAD3F5)
+![license](https://img.shields.io/static/v1.svg?style=flat&label=License&message=Unlicense&colorA=24273A&colorB=91d7e3&logo=unlicense&logoColor=91d7e3&)
+
+</div>
 NixOS configuration; Dotfiles Hyprland
 
 ```bash
@@ -7,9 +15,10 @@ git clone https://github.com/StasLavr/NixOS-Conf.git
 mv nixos-config $HOME/nix # Config is supposed to be in the ~/nix directory
 cd $HOME/nix
 sudo nixos-rebuild switch --flake .#NixOS
+home-manager switch --flake .#lavr
 ```
 
-![1713934316_grim](https://github.com/StasLavr/NixOS-Conf/assets/110830098/a947a4ed-e15c-48f3-8fdc-9bf515375a34)
+![screen](assets/screen.png)
 
 ## Programs
 

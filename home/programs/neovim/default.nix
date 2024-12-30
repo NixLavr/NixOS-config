@@ -4,8 +4,7 @@
   config,
   inputs,
   ...
-}:
-{
+}: {
   programs.neovim = {
     enable = true;
     extraPackages = with pkgs; [
@@ -22,4 +21,3 @@
   };
   nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
 }
-w
